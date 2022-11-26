@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +11,7 @@
 
     <link rel="stylesheet" href="../static/home/fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="../static/home/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static\home\fonts\css\owl.carousel.min.css">
 
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -17,17 +19,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../static/home/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static\home\fonts\css\bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="../static/home/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/home.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/upload.css">
+    <link rel="stylesheet" href="../static\css\style.css">
+    <link rel="stylesheet" type="text/css" href="../static\css\home.css">
+    <link rel="stylesheet" type="text/css" href="../static\css\upload.css">
 
-    <title>IBM Upload</title>
-    <link rel="icon" type="image/png" href="../static/images/icons/logo.ico"/>
+    <title>Upload</title>
+    <link rel="icon" type="image/png" href="../static\home\fonts\images\icons\logo.ico"/>
   </head>
   <body style="overflow: hidden;">
+    <div class="hero" style="background-image: url('../static\home\fonts\images\Healthy_food.jpg'); filter: blur(2px); filter: brightness(50%);width: 2500px;"></div>
     <script>
       window.watsonAssistantChatOptions = {
         integrationID: "d9a627e4-239e-4544-8cc4-27d164b8021b", // The ID of this integration.
@@ -43,32 +46,23 @@
     </script>
 
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-    
     <header class="site-navbar" role="banner">
 
       <div class="container">
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2">
-            <img src="../static/images/logo.png" alt="logo" style="height: 50px; width:50px;"/><br></br>
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">IBM Nutrition</a></h1>
+            <img src="../static\home\fonts\images\logo.webp" alt="logo" style="height: 50px; width:50px;background-color: aliceblue;"/><br></br>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Nutri</a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="{{ url_for('home') }}"><span>Home</span></a></li>
-                <li class="active"><a><span>Upload</span></a></li>
+                <a href="{{ url_for('home') }}" class="btn btn-light btn-lg"> <span>Home</span></a>
+                <a class="btn btn-light btn-lg"> <span>Upload</span></a>
                 
-                <li><a href="{{ url_for('logout') }}"><span>Logout</span></a></li>
+                <a href="{{ url_for('logout') }}" class="btn btn-light btn-lg"><span>Logout</span></a>
               </ul>
             </nav>
           </div>
@@ -82,7 +76,7 @@
       
     </header>
 
-    <div class="hero" style="background-image: url('../static/images/Healthy_food.jpg'); filter: blur(2px); filter: brightness(50%);"></div>
+
 
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <div class="file-upload">
@@ -109,6 +103,7 @@
   </form>
 </div>
 
+    
     <script src="../static/home/js/jquery-3.3.1.min.js"></script>
     <script src="../static/home/js/popper.min.js"></script>
     <script src="../static/home/js/bootstrap.min.js"></script>
